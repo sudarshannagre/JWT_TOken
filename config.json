@@ -1,0 +1,33 @@
+{
+	"tokens": [{
+			"ctstid": 1,
+			"hclaims": {
+				"typ": "JWT",
+				"alg": "ES256",
+				"jku": "http://localhost:80/ccts/keys",
+				"kid": "$keyId"
+			},
+			"bclaims": {
+				"aud": ["npaw", "epgocd"],
+				"iss": "ccts",
+				"rol": "stb",
+				"exp": 12,
+				"iat": "",
+				"jti": "$jtiGUID"
+			}
+		},
+		{
+			"ctstid": 2,
+			"hclaims": {
+				"typ": "JWT",
+				"alg": "RS256",
+				"jku": "URI",
+				"kid": "int"
+			},
+			"bclaims": {
+				"aud": ["vCDN"],
+				"exp": 720
+			}
+		}
+	]
+}
